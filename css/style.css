@@ -89,3 +89,45 @@ body {
 .adaptar {
   width: 100%;
 }
+
+.logo {
+  width: 100%;
+  height: 23vw;
+  object-fit: cover;
+}
+
+.tildeLoca {
+  position: relative;
+  left: 0%;
+  animation-name: tilde;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes tilde {
+  100% {
+    left: 0px;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.colorLoco {
+  animation-name: cambioColor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cambioColor {
+  from {
+    color: red;
+  }
+  to {
+    color: blue;
+  }
+}
